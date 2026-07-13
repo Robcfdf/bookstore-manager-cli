@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
+import { menuAutores } from './menuAutores';
 
-/** RF06 - Menu principal, ponto de navegação entre todos os módulos do sistema */
 export async function menuPrincipal(): Promise<void> {
   let encerrar = false;
 
@@ -19,8 +19,7 @@ export async function menuPrincipal(): Promise<void> {
 
     switch (opcao) {
       case '1':
-        console.log('\n Módulo de Autores em construção...\n');
-        readlineSync.question('Pressione Enter para voltar ao menu...');
+        await menuAutores();
         break;
       case '2':
         console.log('\n Módulo de Livros em construção...\n');
