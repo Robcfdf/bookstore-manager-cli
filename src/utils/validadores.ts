@@ -8,3 +8,9 @@ export function validarNumeroPositivo(valor: number, campo: string): void {
     throw new Error(`O campo "${campo}" deve ser um número positivo.`);
   }
 }
+export function validarEmail(email: string): void {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!regex.test(email)) {
+    throw new Error('E-mail inválido.');
+  }
+}
