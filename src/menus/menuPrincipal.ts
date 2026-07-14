@@ -3,6 +3,7 @@ import { menuAutores } from './menuAutores';
 import { menuLivros } from './menuLivros';
 import { menuClientes } from './menuClientes';
 import { menuEmprestimos } from './menuEmprestimos';
+import { menuRelatorios } from './menuRelatorios';
 
 export async function menuPrincipal(): Promise<void> {
   let encerrar = false;
@@ -35,8 +36,7 @@ export async function menuPrincipal(): Promise<void> {
         await menuEmprestimos();
         break;
       case '5':
-        console.log('\n Módulo de Relatórios em construção...\n');
-        readlineSync.question('Pressione Enter para voltar ao menu...');
+        await menuRelatorios();
         break;
       case '0':
         console.log('\n Encerrando a aplicação. Até logo!');
