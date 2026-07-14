@@ -31,7 +31,6 @@ export async function menuPrincipal(): Promise<void> {
       case '3':
         await menuClientes();
         break;
-      case '4':
         case '4':
         await menuEmprestimos();
         break;
