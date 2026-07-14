@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync';
 import { menuAutores } from './menuAutores';
 import { menuLivros } from './menuLivros';
 import { menuClientes } from './menuClientes';
+import { menuEmprestimos } from './menuEmprestimos';
 
 export async function menuPrincipal(): Promise<void> {
   let encerrar = false;
@@ -30,8 +31,8 @@ export async function menuPrincipal(): Promise<void> {
         await menuClientes();
         break;
       case '4':
-        console.log('\n Módulo de Empréstimos em construção...\n');
-        readlineSync.question('Pressione Enter para voltar ao menu...');
+        case '4':
+        await menuEmprestimos();
         break;
       case '5':
         console.log('\n Módulo de Relatórios em construção...\n');
