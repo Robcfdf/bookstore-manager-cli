@@ -234,8 +234,7 @@ ID do cliente: 1
 Vídeo demonstrando o funcionamento completo da aplicação, a arquitetura utilizada
 e as principais decisões técnicas do projeto:
 
-**[Link do vídeo será adicionado aqui após a gravação]**
-
+[Link do vídeo será adicionado aqui após a gravação](https://www.youtube.com/watch?v=z3pemp3V5Lo)
 
 
 ## 👤 Integrante
